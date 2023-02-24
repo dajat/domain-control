@@ -93,18 +93,26 @@ Filter traffic in Wireshark to SSH only and ping in Command Prompt by using "SSH
 <br />
 <h2>Observe DHCP Traffic</h2>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/l4yibXJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Filter in Wireshark for DHCP traffic only. Inside of command prompt try to issue a new IP address by entering "ipconfig /renew". In Wireshark, we can see that the IP address still links to the Windows 10 original private IP address.
 </p>
 <br />
 <h2>Observe DNS Traffic</h2>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/oAkJxh4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Filter in Wireshark for DNS traffic only. In command prompt, use "nslookup" to review the IP address of disney.com. In Wireshark, we can review what the IP address is for Disney.com and see where the source is pinged from the private IP address of the Windows 10 Virtual Machine.
+</p>
+<br />
+<h2>Observe DNS Traffic Continued</h2>
+<p>
+<img src="https://imgur.com/NGDZ6K5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Filter in Wireshark for DNS traffic only. In command prompt, use "nslookup" to review the IP address of google.com. In Wireshark, we can review what the IP address is for google.com and see where the source is pinged from the private IP address of the Windows 10 Virtual Machine.
 </p>
 <br />
 <h2>Observe RDP Traffic</h2>
