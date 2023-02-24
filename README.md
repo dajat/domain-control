@@ -53,7 +53,7 @@ After logging in remotely, search for "WireShark" in a web browser and select Wi
 <br />
 <h2>Observe ICMP Traffic</h2>
 <p>
-<img src="https://imgur.com/wU4rB7V.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/wU4rB7V.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 After downloading and install Wireshark, open Wireshark and the Command Prompt. Next, filter "ICMP" in Wireshark and initiate a perpetual ping (ping -t) to the Ubuntu server by using it's private IP address. Toggle back to Microsoft Azure and select the virtual machine with Ubuntu and paste the private IP address in command prompt. Next observe the changes in Wireshark and you will see that the ping was successful.
@@ -61,7 +61,7 @@ After downloading and install Wireshark, open Wireshark and the Command Prompt. 
 <br />
 <h2>Blocking ICMP Traffic in Microsoft Azure</h2>
 <p>
-<img src="https://imgur.com/76V2Ota.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/76V2Ota.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Inside of Microsoft Azure, you can allow or deny incoming traffic to protocols. Next, go to the Ubunutu virtual machine --> select Networking --> Click on Add Inbound port --> Select the "ICMP" protocol --> select "Deny" --> click "Save"
@@ -69,7 +69,7 @@ Inside of Microsoft Azure, you can allow or deny incoming traffic to protocols. 
 <br />
 <h2>Observing Blocked ICMP Traffic</h2>
 <p>
-<img src="https://imgur.com/2jU73tp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/2jU73tp.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Next, observe the changes in Wireshark and Command Prompt and you can see that the request timed out due to blocking the ICMP traffic to the Ubuntu server.
@@ -77,7 +77,7 @@ Next, observe the changes in Wireshark and Command Prompt and you can see that t
 <br />
 <h2>Re-Enable ICMP Traffic</h2>
 <p>
-<img src="https://imgur.com/ZKrvav7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/ZKrvav7.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 You can go back to Microsoft Azure and re-enable ICMP traffic. Go to the Ubunutu virtual machine --> select Networking --> Click on ICMP under Networking --> Select the "ICMP" protocol --> select "Allow" --> click "Save". Go back to Wireshark and observe that the incoming traffic pinged successfully.
@@ -85,7 +85,7 @@ You can go back to Microsoft Azure and re-enable ICMP traffic. Go to the Ubunutu
 <br />
 <h2>Observe SSH Traffic</h2>
 <p>
-<img src="https://imgur.com/A7TEPKV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/A7TEPKV.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Filter traffic in Wireshark to SSH only and ping in Command Prompt by using "SSH and using the private IP address for the Ubuntu server. Type in the password created when initially setting up the Ubuntu account, type "yes", and observe the changes in Wireshark. We can see that both virtual machines are pinging back and forth by looking at the source and destination tabs listing the private IP addresses of both virtual machines. Exit the SSH connection by typing "Exit" in command prompt and pressing "enter"
@@ -93,7 +93,7 @@ Filter traffic in Wireshark to SSH only and ping in Command Prompt by using "SSH
 <br />
 <h2>Observe DHCP Traffic</h2>
 <p>
-<img src="https://imgur.com/l4yibXJ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/l4yibXJ.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Filter in Wireshark for DHCP traffic only. Inside of command prompt try to issue a new IP address by entering "ipconfig /renew". In Wireshark, we can see that the IP address still links to the Windows 10 original private IP address.
@@ -101,7 +101,7 @@ Filter in Wireshark for DHCP traffic only. Inside of command prompt try to issue
 <br />
 <h2>Observe DNS Traffic</h2>
 <p>
-<img src="https://imgur.com/oAkJxh4.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/oAkJxh4.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Filter in Wireshark for DNS traffic only. In command prompt, use "nslookup" to review the IP address of disney.com. In Wireshark, we can review what the IP address is for Disney.com and see where the source is pinged from the private IP address of the Windows 10 Virtual Machine.
@@ -109,7 +109,7 @@ Filter in Wireshark for DNS traffic only. In command prompt, use "nslookup" to r
 <br />
 <h2>Observe DNS Traffic Continued</h2>
 <p>
-<img src="https://imgur.com/NGDZ6K5.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/NGDZ6K5.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Filter in Wireshark for DNS traffic only. In command prompt, use "nslookup" to review the IP address of google.com. In Wireshark, we can review what the IP address is for google.com and see where the source is pinged from the private IP address of the Windows 10 Virtual Machine.
@@ -117,9 +117,9 @@ Filter in Wireshark for DNS traffic only. In command prompt, use "nslookup" to r
 <br />
 <h2>Observe RDP Traffic</h2>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/SINJZGy.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Filter in Wireshark for RDP traffic only by using "tcp.port == 3389". Inside of Wireshark, we can see that the traffic is continuously spamming due to the RDP protocol showing live data from one computer to another. RDP traffic is always being transmitted
 </p>
 <br />
