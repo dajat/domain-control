@@ -120,6 +120,6 @@ Filter in Wireshark for DNS traffic only. In command prompt, use "nslookup" to r
 <img src="https://imgur.com/SINJZGy.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Filter in Wireshark for RDP traffic only by using "tcp.port == 3389". Inside of Wireshark, we can see that the traffic is continuously spamming due to the RDP protocol showing live data from one computer to another. RDP traffic is always being transmitted
+Filter in Wireshark for RDP traffic only by using "tcp.port == 3389". Inside of Wireshark, we can see that the traffic is continuously spamming due to the RDP protocol showing live data from one computer to another. RDP traffic is always transmitted.
 </p>
 <br />
