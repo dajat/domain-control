@@ -10,7 +10,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
 - Various Command-Line Tools
-- Various Network Protocols (SSH, RDH, DNS, HTTP/S, ICMP)
+- Various Network Protocols (SSH, RDP, DNS, DHCP, ICMP)
 - Wireshark (Protocol Analyzer)
 
 <h2>Operating Systems Used </h2>
@@ -20,10 +20,10 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>High-Level Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Create Windows 10 and Ubuntu (Linux) Virtual Machines
+- Remotely Login to Windows 10 Virtual Machine
+- Download and Install Wireshark and Open Command Prompt
+- Observe traffic on ICMP, SSH, DHCP, DNS, RDP
 
 <h2>Actions and Observations</h2>
 
