@@ -32,7 +32,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <img src="https://imgur.com/pxrfAke.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Inside of Microsoft Azure, create a Windows 10 and Ubuntu virtual machine. Ensure that each virtual machine has the same region, size, and virtual network and subnet in Microsoft Azure.
+Inside of Microsoft Azure, create a Windows 10 and Ubuntu virtual machine. Ensure that each virtual machine has the same region, size, resource group, and virtual network and subnet in Microsoft Azure.
 </p>
 <br />
 <h2>Review Topology in Network Watcher and login to Windows 10 on Remote Desktop</h2>
@@ -53,15 +53,39 @@ After logging in remotely, search for "WireShark" in a web browser and select Wi
 <br />
 <h2>Observe ICMP Traffic</h2>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/wU4rB7V.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+After downloading and install Wireshark, open Wireshark and the Command Prompt. Next, filter "ICMP" in Wireshark and initiate a perpetual ping (ping -t) to the Ubuntu server by using it's private IP address. Toggle back to Microsoft Azure and select the virtual machine with Ubuntu and paste the private IP address in command prompt. Next observe the changes in Wireshark and you will see that the ping was successful.
+</p>
+<br />
+<h2>Blocking ICMP Traffic in Microsoft Azure</h2>
+<p>
+<img src="https://imgur.com/76V2Ota.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Inside of Microsoft Azure, you can allow or deny incoming traffic to protocols. Next, go to the Ubunutu virtual machine --> select Networking --> Click on Add Inbound port --> Select the "ICMP" protocol --> select "Deny" --> click "Save"
+</p>
+<br />
+<h2>Observing Blocked ICMP Traffic</h2>
+<p>
+<img src="https://imgur.com/2jU73tp.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Next, observe the changes in Wireshark and Command Prompt and you can see that the request timed out due to blocking the ICMP traffic to the Ubuntu server.
+</p>
+<br />
+<h2>Re-Enable ICMP Traffic</h2>
+<p>
+<img src="https://imgur.com/ZKrvav7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+You can go back to Microsoft Azure and re-enable ICMP traffic. Go to the Ubunutu virtual machine --> select Networking --> Click on ICMP under Networking --> Select the "ICMP" protocol --> select "Allow" --> click "Save". Go back to Wireshark and observe that the incoming traffic pinged successfully.
 </p>
 <br />
 <h2>Observe SSH Traffic</h2>
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/ZKrvav7.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
