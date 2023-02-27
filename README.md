@@ -37,7 +37,7 @@ Inside of Microsoft Azure, create a Windows 10 and Ubuntu virtual machine. Sign-
 <br />
 <h2>Creating the Ubuntu Virtual Machine</h2>
 <p>
-<img src="https://imgur.com/NEbkM0e.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/OBIydcc.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Inside of Microsoft Azure, ensure that the Ubuntu virtual machine has the same size, region and virtual network as the Windows 10 machine. Also, make sure that the "Administrator Account" is selected for "Password", not "SSH Public Key"
