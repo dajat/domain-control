@@ -120,7 +120,7 @@ Filter in Wireshark for DHCP traffic only. Inside of command prompt try to issue
 <img src="https://imgur.com/oAkJxh4.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Filter in Wireshark for DNS traffic only. In command prompt, use "nslookup" to review the IP address of disney.com. In Wireshark, we can review what the IP address is for Disney.com and see where the source is pinged from the private IP address of the Windows 10 Virtual Machine.
+Filter in Wireshark for DNS traffic only. In command prompt, use "nslookup" to review the IP address of disney.com. In Wireshark, we can review what the IP address is for Disney.com and see that the source is pinged from the private IP address of the Windows 10 Virtual Machine.
 </p>
 <br />
 <h2>Observe DNS Traffic Continued</h2>
