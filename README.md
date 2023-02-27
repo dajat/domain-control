@@ -32,12 +32,12 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 <img src="https://imgur.com/pxrfAke.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Inside of Microsoft Azure, create a Windows 10 and Ubuntu virtual machine. Ensure that each virtual machine has the same region, size, resource group, and virtual network and subnet in Microsoft Azure.
+Inside of Microsoft Azure, create a Windows 10 and Ubuntu virtual machine. Sign-in to Microsoft Azure and type in the search box: "Virtual Machine". Click on "Create" and "Azure Virtual Machine"
 </p>
 <br />
 <h2>Creating the Ubuntu Virtual Machine</h2>
 <p>
-<img src="https://imgur.com/gKhBIYV.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://imgur.com/NEbkM0e.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Inside of Microsoft Azure, ensure that the Ubuntu virtual machine has the same size, region and virtual network as the Windows 10 machine. Also, make sure that the "Administrator Account" is selected for "Password", not "Public Key"
@@ -48,7 +48,7 @@ Inside of Microsoft Azure, ensure that the Ubuntu virtual machine has the same s
 <img src="https://imgur.com/AHG98ZO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Once each virtual machine is created, you can review Network Watcher to verify that both machines are under the same virtual network. Next, you can virtually login to the Windows 10 machine by selecting the public IP address. Go to Microsoft Azure --> Click on Virtual Machine --> Click on VM with Windows 10 --> Copy the Public IP address under the Overview tab.
+Once each virtual machine is created, you can review Network Watcher to verify that both machines are under the same virtual network.
 </p>
 <br />
 <h2>Login to Windows 10 on Remote Desktop</h2>
@@ -56,7 +56,7 @@ Once each virtual machine is created, you can review Network Watcher to verify t
 <img src="https://imgur.com/ZKVMzhZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Next, you can virtually login to the Windows 10 machine by selecting the public IP address and signing into Remote Desktop. To find remote desktop, click on the start window and type in remote desktop. Go to Microsoft Azure --> Click on Virtual Machine --> Click on VM with Windows 10 --> Copy the Public IP address under the Overview tab.
+Next, you can virtually login to the Windows 10 machine by selecting the public IP address and signing into Remote Desktop Connection. To find remote desktop, click on the start window and type in remote desktop. Go to Microsoft Azure --> Click on Virtual Machine --> Click on VM with Windows 10 --> Copy the Public IP address under the Overview tab.
 </p>
 <br />
 <h2>Download and Install Wireshark and Open Command Prompt</h2>
@@ -64,7 +64,7 @@ Next, you can virtually login to the Windows 10 machine by selecting the public 
 <img src="https://imgur.com/1bzjijP.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-After logging in remotely, search for "WireShark" in a web browser and select Windows Installer 64-bit to download. Next, open the file and continue steps for installation.
+After logging in remotely, search for "WireShark" in a web browser and select Windows Installer 64-bit to download. Next, open the file and continue steps for installation. To open Command Line, click on the Start Window button and type in the search bar "Command Prompt".
 </p>
 <br />
 <h2>Observe ICMP Traffic</h2>
@@ -72,7 +72,7 @@ After logging in remotely, search for "WireShark" in a web browser and select Wi
 <img src="https://imgur.com/wU4rB7V.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-After downloading and installing Wireshark, open Wireshark and Command Prompt (Command Line). Next, filter "ICMP" in Wireshark and initiate a perpetual ping (ping -t) to the Ubuntu server by using it's private IP address. Toggle back to Microsoft Azure and select the virtual machine with Ubuntu and paste the private IP address in command prompt. Next observe the changes in Wireshark and you will see that the ping was successful.
+After downloading and installing Wireshark, open it and click on "Ethernet". Next, filter "ICMP" in Wireshark and initiate a perpetual ping (ping -t) to the Ubuntu server by using it's private IP address. Toggle back to Microsoft Azure and select the virtual machine with Ubuntu and paste the private IP address in command prompt. Next observe the changes in Wireshark and you will see that the ping was successful.
 </p>
 <br />
 <h2>Blocking ICMP Traffic in Microsoft Azure</h2>
