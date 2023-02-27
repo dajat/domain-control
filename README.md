@@ -56,7 +56,7 @@ After logging in remotely, search for "WireShark" in a web browser and select Wi
 <img src="https://imgur.com/wU4rB7V.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-After downloading and install Wireshark, open Wireshark and the Command Prompt. Next, filter "ICMP" in Wireshark and initiate a perpetual ping (ping -t) to the Ubuntu server by using it's private IP address. Toggle back to Microsoft Azure and select the virtual machine with Ubuntu and paste the private IP address in command prompt. Next observe the changes in Wireshark and you will see that the ping was successful.
+After downloading and installing Wireshark, open Wireshark and Command Prompt (Command Line). Next, filter "ICMP" in Wireshark and initiate a perpetual ping (ping -t) to the Ubuntu server by using it's private IP address. Toggle back to Microsoft Azure and select the virtual machine with Ubuntu and paste the private IP address in command prompt. Next observe the changes in Wireshark and you will see that the ping was successful.
 </p>
 <br />
 <h2>Blocking ICMP Traffic in Microsoft Azure</h2>
