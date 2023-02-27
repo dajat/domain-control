@@ -104,7 +104,7 @@ You can go back to Microsoft Azure and re-enable ICMP traffic. Go to the Ubunutu
 <img src="https://imgur.com/A7TEPKV.png" height="90%" width="90%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Filter traffic in Wireshark to SSH only and ping in Command Prompt by using "SSH and using the private IP address for the Ubuntu server. Type in the password created when initially setting up the Ubuntu account, type "yes", and observe the changes in Wireshark. We can see that both virtual machines are pinging back and forth by looking at the source and destination tabs listing the private IP addresses of both virtual machines. Exit the SSH connection by typing "Exit" in command prompt and pressing "enter"
+Filter traffic in Wireshark to SSH only and ping in Command Prompt by using "SSH" and using the private IP address for the Ubuntu server. Type in the password created when initially setting up the Ubuntu account, type "yes", and observe the changes in Wireshark. We can see that both virtual machines are pinging back and forth by looking at the source and destination tabs listing the private IP addresses of both virtual machines. Exit the SSH connection by typing "Exit" in command prompt and pressing "enter"
 </p>
 <br />
 <h2>Observe DHCP Traffic</h2>
