@@ -35,12 +35,28 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 Inside of Microsoft Azure, create a Windows 10 and Ubuntu virtual machine. Ensure that each virtual machine has the same region, size, resource group, and virtual network and subnet in Microsoft Azure.
 </p>
 <br />
-<h2>Review Topology in Network Watcher and login to Windows 10 on Remote Desktop</h2>
+<h2>Creating the Ubuntu Virtual Machine</h2>
+<p>
+<img src="https://imgur.com/pxrfAke.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Inside of Microsoft Azure, ensure that the Ubuntu virtual machine has the same size, region and virtual network as the Windows 10 machine. Also, make sure that the "Administrator Account" is selected for "Password", not "Public Key"
+</p>
+<br />
+<h2>Review Topology in Network Watcher</h2>
 <p>
 <img src="https://imgur.com/AHG98ZO.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Once each virtual machine is created, you can review Network Watcher to verify that both machines are under the same virtual network. Next, you can virtually login to the Windows 10 machine by selecting the public IP address. Go to Microsoft Azure --> Click on Virtual Machine --> Click on VM with Windows 10 --> Copy the Public IP address under the Overview tab.
+</p>
+<br />
+<h2>Login to Windows 10 on Remote Desktop</h2>
+<p>
+<img src="https://imgur.com/ZKVMzhZ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Next, you can virtually login to the Windows 10 machine by selecting the public IP address and signing into Remote Desktop. To find remote desktop, click on the start window and type in remote desktop. Go to Microsoft Azure --> Click on Virtual Machine --> Click on VM with Windows 10 --> Copy the Public IP address under the Overview tab.
 </p>
 <br />
 <h2>Download and Install Wireshark and Open Command Prompt</h2>
